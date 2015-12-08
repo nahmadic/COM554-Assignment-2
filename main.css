@@ -1,0 +1,17 @@
+body {
+  background-image: url("../images/bgstripe.png");
+  background-color: black;
+}
+.row #content-container {
+  padding-top: 60px;
+}
+
+div .col-md-4 {
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div .thumbnail {
+  height: 200px;
+}
