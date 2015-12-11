@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,73 +10,74 @@
   <script type="text/javascript" src="JS/main.js"></script>
   <title>Ryan's News Website</title>
 </head>
-
 <body>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation" id="top-nav">
           <div class="navbar-header">
-
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button> <a class="navbar-brand" href="#">Ryan's Tech News</a>
+            </button> <a class="navbar-brand active" href="#">Ryan's Tech News</a>
           </div>
-
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active">
-                <a href="#">Most Popular</a>
+              <li>
+                <a href="#" id="most-pop">Most Popular</a>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Computing<strong class="caret"></strong></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="computing">Computing<strong class="caret"></strong></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#">PC</a>
+                    <a href="#" id="pc-computing">PC</a>
                   </li>
                   <li>
-                    <a href="#">Mac</a>
+                    <a href="#" id="mac-computing">Mac</a>
                   </li>
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gaming<strong class="caret"></strong></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="gaming">Gaming<strong class="caret"></strong></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a href="#">PC Gaming</a>
+                    <a href="#" id="pc-gaming">PC Gaming</a>
                   </li>
                   <li>
-                    <a href="#">Console Gaming</a>
+                    <a href="#" id="console-gaming">Console Gaming</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#">Gadgets</a>
+                <a href="#" id="gadgets">Gadgets</a>
               </li>
             </ul>
             <form class="navbar-form navbar-right" role="search">
               <div class="form-group">
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control" id="search-field" />
               </div>
-              <button type="submit" class="btn btn-default">
+              <button type="submit" class="btn btn-default" id="search-btn">
                 Submit
               </button>
             </form>
           </div>
-
         </nav>
+        <div class="col-md-8 col-md-offset-2" id="landing-page">
+          <h1>Welcome to Ryan's Tech News Page</h1>
+          <h2>Simply use the navigation bar to begin viewing content</h2>
+        </div>
+        <div class="col-md-3 col-md-offset-9" id="help-page">
+          <h1>Welcome to the search functionality</h1>
+          <p>
+            Please enter your search query in the field above and click submit when you are ready. The Page will automatically be populated with your results.
+          </p>
+          <p>
+            Thank you!!!
+          </p>
+        </div>
         <div class="row" id="content-container">
         </div>
       </div>
     </div>
   </div>
-  <div id="output">
-
-  </div>
-
 </body>
 
 </html>

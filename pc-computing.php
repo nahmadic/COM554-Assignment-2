@@ -14,7 +14,7 @@ function get_url_contents($url){
   curl_close($crl);
   return $ret;
 }
-$url = "http://www.rssmix.com/u/8167457/rss.xml";
+$url = "http://www.rssmix.com/u/8167295/rss.xml";
 $str = file_get_contents($url);
 echo $str;
 ?>

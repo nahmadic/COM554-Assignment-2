@@ -1,17 +1,56 @@
 body {
-  background-image: url("../images/bgstripe.png");
+  padding-top: 20px;
+  background-image: url("../images/news-background.jpg");
   background-color: black;
 }
 .row #content-container {
   padding-top: 60px;
 }
-
 div .col-md-4 {
   height: 200px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 div .thumbnail {
   height: 200px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+.caption-title {
+  max-height: 190px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#landing-page h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+#landing-page h3 {
+  font-size: 20px;
+}
+div #landing-page {
+  border-radius: 5px;
+  height: 600px;
+  text-align: center;
+  margin-top: 10%;
+  padding-top: 10%;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+}
+.read-more-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+#help-page {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: Black;
+  height: 250px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
 }
